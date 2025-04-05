@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Heart Cafe</title>
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Header with Logo -->
+  <header class="site-header">
+    <div class="logo-text">
+      <span class="text-part">HEART</span>
+      <img src="images/logo.png" alt="Heart Cafe Logo" class="logo-icon">
+      <span class="text-part">CAFE</span>
+    </div>
+  </header>
+  
+  
+
+  <!-- Navigation Bar -->
+  <nav>
+    <ul class="navbar">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#location">Location</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero / Slideshow Section -->
+  <section id="home" class="hero">
+    <div class="slider-container">
+      <div class="slider">
+        <div class="slide active">
+          <img src="images/cafe1.jpg" alt="Heart Cafe Interior" />
+        </div>
+        <div class="slide">
+          <img src="images/cafe2.jpg" alt="Heart Cafe Food" />
+        </div>
+        <div class="slide">
+          <img src="images/cafe3.jpg" alt="Heart Cafe Vibes" />
+        </div>
+      </div>
+      <button class="prev" onclick="prevSlide()">❮</button>
+      <button class="next" onclick="nextSlide()">❯</button>
+    </div>
+    <div class="hero-text">
+      <h1>Welcome to Heart Cafe</h1>
+      <p>Where love meets coffee</p>
+      <a href="#menu" class="cta">View Menu</a>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section id="menu" class="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="images/coffee.jpg" alt="Espresso"/>
+        <h3>Espresso</h3>
+        <p class="description">Rich and bold espresso shot.</p>
+        <p class="price">$3.50</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/latte.jpg" alt="Latte"/>
+        <h3>Vanilla Latte</h3>
+        <p class="description">Smooth espresso with steamed milk and vanilla.</p>
+        <p class="price">$4.00</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/cappuccino.jpg" alt="Cappuccino"/>
+        <h3>Cappuccino</h3>
+        <p class="description">Perfect balance of espresso, steamed milk, and foam.</p>
+        <p class="price">$4.20</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/icedcoffee.jpg" alt="Iced Coffee"/>
+        <h3>Iced Coffee</h3>
+        <p class="description">Chilled coffee over ice with a hint of sweetness.</p>
+        <p class="price">$3.80</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/tea.jpg" alt="Chai Tea"/>
+        <h3>Chai Tea Latte</h3>
+        <p class="description">Spiced tea blended with steamed milk.</p>
+        <p class="price">$4.00</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/croissant.jpg" alt="Croissant"/>
+        <h3>Butter Croissant</h3>
+        <p class="description">Flaky, buttery, and fresh from the oven.</p>
+        <p class="price">$2.50</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/muffin.jpg" alt="Blueberry Muffin"/>
+        <h3>Blueberry Muffin</h3>
+        <p class="description">Soft muffin loaded with fresh blueberries.</p>
+        <p class="price">$2.80</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/sandwich.jpg" alt="Club Sandwich"/>
+        <h3>Club Sandwich</h3>
+        <p class="description">Stacked with turkey, ham, lettuce, and cheese.</p>
+        <p class="price">$6.50</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/soup.jpg" alt="Tomato Soup"/>
+        <h3>Tomato Basil Soup</h3>
+        <p class="description">Warm, creamy tomato soup with fresh basil.</p>
+        <p class="price">$4.50</p>
+      </div>
+      <div class="menu-item">
+        <img src="images/cake.jpg" alt="Chocolate Cake"/>
+        <h3>Chocolate Cake</h3>
+        <p class="description">Moist and rich chocolate cake slice.</p>
+        <p class="price">$3.90</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Heart Cafe</h2>
+    <p>Heart Cafe was founded with the mission to create a warm, welcoming space where everyone can feel at home and enjoy the best coffee in town!</p>
+    <div class="about-images">
+      <img src="images/about1.jpg" alt="Barista at work"/>
+      <img src="images/about2.jpg" alt="Cozy seating"/>
+    </div>
+  </section>
+
+  <!-- Location Section -->
+  <section id="location" class="location">
+    <h2>Find Us</h2>
+    <div id="map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.2722909917727!2d85.36380607539517!3d27.721497324019412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb1b8a1ebcc89b%3A0x6619bdb170e7d4d!2sBoudhanath%20Stupa!5e0!3m2!1sen!2snp!4v1712310100000!5m2!1sen!2snp" 
+        width="100%" 
+        height="300" 
+        style="border:0;" 
+        allowfullscreen="" 
+        loading="lazy" 
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+    <p>Boudha-6, Dharatole Kathmandu</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>📞 Phone: <a href="tel:+9779801234567">+977 9801234567</a></p>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <textarea name="message" id="message" placeholder="Your message..." required></textarea>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Heart Cafe | Follow us: 
+      <a href="#">Instagram</a> | 
+      <a href="#">Facebook</a>
+    </p>
+  </footer>
+
+</body>
+</html>
